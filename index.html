@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooley Timeline Project</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h1 class="top__title">Sosiologi Oppgave - Fiktiv Person</h1>
+        </div>
+    </header>
+    <main class="timeline">
+        <div class="container left">
+            <div class="content">
+                <h2>1975</h2>
+                <p>Ola blir født.</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>1976</h2>
+                <p>Lorem ipsum</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>1975</h2>
+                <p>Lorem ipsum</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>1975</h2>
+                <p>Lorem ipsum</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>1975</h2>
+                <p>Lorem ipsum</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>1975</h2>
+                <p>Lorem ipsum</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>1975</h2>
+                <p>Lorem ipsum</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>1975</h2>
+                <p>Lorem ipsum</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>1975</h2>
+                <p>Lorem ipsum</p>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="progress-container">
+            <div class="progress-bar" id="progress">
+
+            </div>
+        </div>
+        <div class="copyright-container">
+            <p>&copy; Sander Enger</p>
+        </div>
+    </footer>
+
+    <script>
+    window.onscroll = function() {scrollIndicator()};
+    
+    function scrollIndicator() {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    
+        const progress = document.getElementById("progress");
+    
+        let scrolled = (winScroll / height) * 100;
+        progress.style.width = scrolled + "%";
+    }
+    </script>
+</body>
+</html>
